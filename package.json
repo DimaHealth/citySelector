@@ -1,0 +1,30 @@
+{
+  "name": "jquery-ajax-homework",
+  "version": "0.0.1",
+  "description": "jQuery ajax homework: create a city celector.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --inline",
+    "start": "concurrently \"npm run api\" \"npm run dev\"",
+    "api": "json-server --watch db.json --port 7000"
+  },
+  "keywords": [],
+  "author": "Andrey Miskov",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "css-loader": "^0.28.1",
+    "json-server": "^0.10.3",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
